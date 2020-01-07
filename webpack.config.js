@@ -72,7 +72,7 @@ function copy(copyName){
     const pluginOption = {
       filename: `${dir}/index.html`,
       template: htmls[dir], 
-      inject: false, //允许插件修改哪些内容，包括head与body
+      inject: true, //允许插件修改哪些内容，包括head与body
       hash: false, //是否添加hash值
       minify: { //压缩HTML文件
         removeComments: true,//移除HTML中的注释
